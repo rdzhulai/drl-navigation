@@ -1,0 +1,102 @@
+#VRML_SIM R2023b utf8
+PROTO CUBE2[
+  field SFVec3f    translation  -9.5559e-05 -0.22 0.05
+  field SFRotation rotation     6.0260577220429636e-06 -0.9999986219827285 0.0016601193724453396 0.00159266
+  field SFFloat    bodyMass     1
+]
+{
+    
+DEF CUBE-2 Robot {
+  translation 0.0877819 0.212251 0.0680553
+  rotation -0.0005353749101095192 0.00022175996276607422 0.9999998320980981 0.785398
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+    DEF WHEEL1 HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.6342899280140724e-09
+        axis 0 1 0
+        anchor 0.03 7.34639e-08 -0.04
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.03 7.34639e-08 -0.04
+        rotation 1 1.3171401258723183e-09 -1.3171449640070364e-09 1.5708
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.1
+              radius 0.02
+              subdivision 24
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL2 HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.6342018089307014e-09
+        axis 0 1 0
+        anchor -0.03 7.34639e-08 -0.04
+      }
+      device [
+        RotationalMotor {
+          name "wheel2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.03 7.34639e-08 -0.04
+        rotation 1 1.3170960664924725e-09 -1.3171009044653507e-09 1.5708
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.1
+              radius 0.02
+              subdivision 24
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+  ]
+  name "dynamic_objects(1)"
+  contactMaterial "defualt"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 5
+  }
+  controller "supervisor_controller"
+  supervisor TRUE
+}
+
+}
