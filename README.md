@@ -1,6 +1,5 @@
 ## Project Overview
-
-This project is developed as a part of the course "Intelligent Systems and Mobile Robotics" under the guidance of the Department of Cybernetics and Artificial Intelligence. The main objective is to implement and optimize a Deep Reinforcement Learning (DRL) algorithm for autonomous robot navigation in environments with static and dynamic obstacles. The project focuses on minimizing collisions and improving navigation efficiency using a Deep Q-Network (DQN).
+The main objective is to implement and optimize a Deep Reinforcement Learning (DRL) algorithm for autonomous robot navigation in environments with static and dynamic obstacles. The project focuses on minimizing collisions and improving navigation efficiency using a Deep Q-Network (DQN).
 
 ## Table of Contents
 
@@ -12,8 +11,6 @@ This project is developed as a part of the course "Intelligent Systems and Mobil
 6. [Experiments and Evaluation](#experiments-and-evaluation)
 7. [Conclusion](#conclusion)
 8. [Key Terms](#key-terms)
-9. [Authors](#authors)
-10. [References](#references)
 
 ## Introduction
 
@@ -71,15 +68,3 @@ This project demonstrates the potential of Deep Reinforcement Learning in enhanc
 - **Markov Decision Process (MDP)**: A mathematical model used to describe decision-making problems where outcomes are partly random and partly under the control of a decision-maker.
 - **Deep Q-Network (DQN)**: An algorithm in machine learning that combines deep neural networks with Q-learning, a reinforcement learning method, to approximate Q-values for different actions and states.
 - **Experience Replay**: A technique in reinforcement learning where past experiences are stored and randomly sampled to train the model, improving learning stability and efficiency.
-
-## Authors
-
-- **Ivan Tkachenko**
-- **Roman Dzhulai**
-- **Dmytro Varich**
-- **Anfisa Konycheva**
-
-## References
-
-For more details, please refer to the full article titled "Obstacle Avoidance using Deep Reinforcement Learning" available in the repository:
-- Tkachenko, I., Dzhulai, R., Varich, D., & Konycheva, A. (2023). *Obstacle Avoidance using Deep Reinforcement Learning*. Department of Cybernetics and Artificial Intelligence, Technical University of Košice. [Link to PDF](./article/article.pdf)
