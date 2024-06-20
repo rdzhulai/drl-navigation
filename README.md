@@ -17,15 +17,15 @@ This project is developed as a part of the course "Intelligent Systems and Mobil
 
 ## Introduction
 
-Navigation of autonomous robots is a critical component of various technological applications, from supply chain logistics to exploration of unknown terrains. The goal is to enable robots to move efficiently from a starting point to a destination while avoiding static and dynamic obstacles. Recent advancements have highlighted the potential of Deep Reinforcement Learning (DRL) to enhance this capability by allowing robots to learn from experiences and improve their decision-making processes【3†source】.
+Navigation of autonomous robots is a critical component of various technological applications, from supply chain logistics to exploration of unknown terrains. The goal is to enable robots to move efficiently from a starting point to a destination while avoiding static and dynamic obstacles. Recent advancements have highlighted the potential of Deep Reinforcement Learning (DRL) to enhance this capability by allowing robots to learn from experiences and improve their decision-making processes.
 
 ## Problem Description
 
 ### Problem
-The environment is represented as a 2D Cartesian plane, with each object modeled geometrically as a circle. The robot and other entities in the environment are characterized by their positions, velocities, and other relevant parameters. The objective is to find an optimal control strategy that maximizes cumulative rewards over time, considering factors like action intervals and discount factors【3†source】【3:12†source】.
+The environment is represented as a 2D Cartesian plane, with each object modeled geometrically as a circle. The robot and other entities in the environment are characterized by their positions, velocities, and other relevant parameters. The objective is to find an optimal control strategy that maximizes cumulative rewards over time, considering factors like action intervals and discount factors.
 
 ### Solution Method
-We employ the Deep Q-Network (DQN) architecture, a powerful tool in reinforcement learning, to iteratively learn from environmental feedback and adjust its decision-making process. This involves training the DQN model using the "Experience Replay" algorithm, which allows the robot to learn from past experiences and refine its strategies over time【3†source】.
+We employ the Deep Q-Network (DQN) architecture, a powerful tool in reinforcement learning, to iteratively learn from environmental feedback and adjust its decision-making process. This involves training the DQN model using the "Experience Replay" algorithm, which allows the robot to learn from past experiences and refine its strategies over time.
 
 ## Robot Model
 
@@ -35,7 +35,7 @@ The robot model is developed in the Webots simulation environment. The key aspec
 - Reward function definition
 - Training and evaluation setup
 
-For detailed information on the robot model, please refer to section 4 of the article【3†source】.
+For detailed information on the robot model, please refer to section 4 of the article [Link to PDF](./article/article.pdf).
 
 ## Simulation and Training
 
@@ -48,10 +48,10 @@ The robot is trained and evaluated across various scenarios:
 5. **Simple dynamic obstacles**
 6. **Complex static and dynamic obstacles**
 
-For a comprehensive description of each scenario, see section 5 of the article【3†source】.
+For a comprehensive description of each scenario, see section 5 of the article [Link to PDF](./article/article.pdf).
 
 ### Training Process
-The DQN model is trained using reinforcement learning techniques, focusing on maximizing cumulative rewards by avoiding collisions and navigating efficiently. Details of the training process are elaborated in section 6 of the article【3†source】.
+The DQN model is trained using reinforcement learning techniques, focusing on maximizing cumulative rewards by avoiding collisions and navigating efficiently. Details of the training process are elaborated in section 6 of the article [Link to PDF](./article/article.pdf).
 
 ## Experiments and Evaluation
 
@@ -59,11 +59,11 @@ The DQN model is trained using reinforcement learning techniques, focusing on ma
 The robot is tested in different scenarios to assess its performance. Key metrics include navigation success rate, collision rate, and efficiency of the path taken.
 
 ### Results
-Results are analyzed to determine the effectiveness of the DRL approach in improving autonomous navigation in complex environments. For experimental results and analysis, refer to section 7 of the article【3†source】.
+Results are analyzed to determine the effectiveness of the DRL approach in improving autonomous navigation in complex environments. For experimental results and analysis, refer to section 7 of the article [Link to PDF](./article/article.pdf).
 
 ## Conclusion
 
-This project demonstrates the potential of Deep Reinforcement Learning in enhancing autonomous robot navigation. The DQN model successfully navigates through complex environments, reducing collision rates and improving overall efficiency. For a detailed discussion, see the conclusion section of the article【3†source】.
+This project demonstrates the potential of Deep Reinforcement Learning in enhancing autonomous robot navigation. The DQN model successfully navigates through complex environments, reducing collision rates and improving overall efficiency. For a detailed discussion, see the conclusion section of the article [Link to PDF](./article/article.pdf).
 
 ## Key Terms
 
@@ -82,4 +82,4 @@ This project demonstrates the potential of Deep Reinforcement Learning in enhanc
 ## References
 
 For more details, please refer to the full article titled "Obstacle Avoidance using Deep Reinforcement Learning" available in the repository:
-- Tkachenko, I., Dzhulai, R., Varich, D., & Konycheva, A. (2023). *Obstacle Avoidance using Deep Reinforcement Learning*. Department of Cybernetics and Artificial Intelligence, Technical University of Košice. [Link to PDF](./article.pdf)
+- Tkachenko, I., Dzhulai, R., Varich, D., & Konycheva, A. (2023). *Obstacle Avoidance using Deep Reinforcement Learning*. Department of Cybernetics and Artificial Intelligence, Technical University of Košice. [Link to PDF](./article/article.pdf)
